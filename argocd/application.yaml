@@ -7,4 +7,17 @@ spec:
   project: default
 
   source:
-    repoURL
+    repoURL: https://github.com/abdullahmasoodx/fastapi-argo-demo.git
+    targetRevision: main
+    path: k8s
+
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+
+    syncOptions:
+     - CreateNamespace=true

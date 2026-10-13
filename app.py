@@ -10,7 +10,8 @@ app = FastAPI(
 def home():
     return {
         "message": "Hello from FastAPI",
-        "status": "running"
+        "status": "running",
+        "version": "Updated v1"
     }
 
 
