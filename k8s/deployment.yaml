@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: fastapi-gitops-demo
-          image: abdullahmasoodx/fastapi-gitops-demo:v1
+          image: abdullahmasoodx/fastapi-gitops-demo:v2
           ports:
            - containerPort: 5001
