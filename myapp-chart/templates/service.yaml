@@ -5,7 +5,7 @@ metadata:
 
 spec:
   selector:
-    app: fastapi-gitops-demo
+    app: {{.Values.app.name}}
   ports:
    - port: {{.Values.service.port}} 
      protocol: TCP
