@@ -9,8 +9,12 @@ spec:
   source:
     repoURL: https://github.com/abdullahmasoodx/fastapi-argo-demo.git
     targetRevision: main
-    path: k8s
+    path: myapp-chart
 
+    helm:
+      releaseName: myapp-chart
+      valueFiles:
+       - values.yaml
   destination:
     server: https://kubernetes.default.svc
     namespace: default
